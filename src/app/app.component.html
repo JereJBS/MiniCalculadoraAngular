@@ -1,11 +1,22 @@
-<div class="container">
+<div class="container" style="margin-top: 10%;">
   <div class="row align-items-start">
     <div class="col">
       
     </div>
     <div class="col">
       <h1>{{title}}</h1>
-      <form></form>
+      <br/>
+      <form>
+        operando 1: <input type="number" [(ngModel)]="numero1" name="numero1"> <br/> <br/>
+        operando 2: <input type="number" [(ngModel)]="numero2" name="numero2"> <br/> <br/>
+        <div class="col">
+          <button type="button" class="btn btn-success" (click)="sumar()">Sumar</button>
+          <button type="button" class="btn btn-danger" style="margin-left: 10px;" (click)="restar()" >restar</button>
+          <button type="button" class="btn btn-primary" style="margin-left: 10px;" (click)="multiplicar()">multiplicar</button>
+          <button type="button" class="btn btn-warning" style="margin-left: 10px;" (click)="dividir()">dividir</button>
+        </div>
+      </form>
+      Resultado: {{resultado}}
     </div>
     <div class="col">
     
